@@ -1,0 +1,4 @@
+interface:
+  display_name: "Procurement Pricing Modeler"
+  short_description: "Compare vendor pricing, billing units, usage scenarios, and commitments."
+  default_prompt: "Use this skill to analyze a vendor procurement decision, ask for the right source context, normalize pricing to comparable terms, model usage scenarios, and produce negotiation-ready talking points."
