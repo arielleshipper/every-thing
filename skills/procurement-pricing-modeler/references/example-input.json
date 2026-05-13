@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "months": 12,
+  "vendors": [
+    {
+      "name": "Incumbent annual commit",
+      "type": "annual_commit",
+      "annual_price": 18900,
+      "included_annual_units": 60000000
+    },
+    {
+      "name": "Challenger monthly usage",
+      "type": "monthly_usage",
+      "monthly_base": 1150,
+      "included_monthly_units": 2500000,
+      "overage_rate": 0.46,
+      "overage_unit_size": 1000
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Expected ramp",
+      "current_monthly_units": 3000000,
+      "target_monthly_units": 4250000,
+      "ramp": "compound"
+    },
+    {
+      "name": "Immediate target",
+      "monthly_units": 4250000
+    }
+  ]
+}
