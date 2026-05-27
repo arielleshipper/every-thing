@@ -1,13 +1,13 @@
 ---
 name: procurement-pricing-modeler
-description: Model vendor procurement decisions and SaaS/tool pricing scenarios. Use when Codex needs to help a user evaluate an incumbent tool, identify challenger vendors, compare incompatible billing models such as annual vs monthly or seats vs usage, build conservative/base/aggressive usage scenarios, quantify commitment and underutilization risk, understand implementation work, and produce negotiation-ready pricing tables, questions, talking points, or internal recommendations.
+description: Model vendor procurement decisions and SaaS/tool pricing scenarios. Use when Codex needs to help a user evaluate an incumbent tool, identify challenger vendors, compare incompatible billing models such as annual vs monthly or seats vs usage, build conservative/base/aggressive usage scenarios, quantify commitment and underutilization risk, understand implementation work, calibrate negotiation options, and produce negotiation-ready pricing tables, questions, talking points, or internal recommendations.
 ---
 
 # Procurement Pricing Modeler
 
 ## Overview
 
-Use this skill to turn messy procurement context into a clear pricing model and negotiation plan. The core move is to gather the right source material, normalize proposals to a comparable unit, identify each vendor's billing primitive, and compare current usage, forecast scenarios, and realistic usage ramps.
+Use this skill to turn messy procurement context into a clear pricing model and negotiation plan. The core move is to gather the right source material, normalize proposals to a comparable unit, identify each vendor's billing primitive, compare current usage, forecast scenarios, and realistic usage ramps, then choose the cleanest ask.
 
 ## Workflow
 
@@ -21,8 +21,10 @@ Use this skill to turn messy procurement context into a clear pricing model and 
 8. Separate steady-state from ramp. First calculate cost if the company is at the target usage immediately. Then calculate month-by-month cost under a realistic ramp from current usage to each forecast case.
 9. Quantify optionality and commitment risk. Compare monthly usage billing against annual prepay, minimum commits, underutilization rules, overage rules, rollover, true-up, refunds, cancellation rights, and expansion triggers.
 10. Scope implementation work. Identify whether engineering, data migration, admin setup, security review, deliverability/reputation work, or user retraining is required. Keep this separate from pure pricing unless the user asks for all-in cost.
-11. Convert ambiguity into vendor asks. If terms are missing, produce crisp questions about underutilization, overutilization, billing unit definitions, active vs stored units, blended usage, and migration requirements.
-12. Return receipts. Present the numbers in concise tables, then give negotiation talking points tied to those numbers.
+11. Calibrate negotiation paths. For the decision itself, generate 2-4 possible approaches such as accept/pay and move on, ask for a revised structure, push back with a specific counter, or escalate. This is a judgment calibration tool, separate from conservative/base/aggressive usage modeling.
+12. Pick the cleanest battle. When there are multiple plausible asks, lead with the most logically airtight one and avoid diluting it with weaker arguments. Concede or ignore low-value points when doing so makes the core ask easier to accept.
+13. Convert ambiguity into vendor asks. If terms are missing, produce crisp questions about underutilization, overutilization, billing unit definitions, active vs stored units, blended usage, and migration requirements.
+14. Return receipts. Present the numbers in concise tables, then give negotiation talking points tied to those numbers.
 
 ## Modeling Standards
 
@@ -36,12 +38,17 @@ Use this skill to turn messy procurement context into a clear pricing model and 
 - When comparing billing primitives, model the unit that best matches actual product behavior, not just the vendor's default category.
 - Treat vendor forecasts as evidence, not truth. Compare them against internal usage data and explicitly name the delta.
 - Ask for call transcripts or meeting notes when vendor conversations contain pricing nuance that did not make it into an email or quote.
+- Anchor with a specific number or structure when the math supports it. Avoid vague asks like "can you do better?" when there is a defensible target.
+- Use the vendor's own framework when it helps. If their billing primitive, discount logic, or usage formula is reasonable but applied badly, keep the framework and challenge the application.
+- Include cost-of-fight judgment. A technically valid pushback may not be worth pursuing if the savings are small, the relationship cost is high, or the implementation distraction outweighs the benefit.
+- Distinguish the principled answer from the likely practical outcome when vendor behavior, renewal leverage, or relationship dynamics matter.
 
 ## Useful References
 
 - For procurement intake questions, read `references/intake-checklist.md`.
 - For output structures and negotiation language, read `references/output-templates.md`.
 - For common billing primitives and modeling traps, read `references/billing-primitives.md`.
+- For broader dispute, escalation, or legal-adjacent pushback outside procurement pricing, use the `ops-dispute-negotiation` skill instead.
 
 ## Calculator Script
 
