@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commission Plan Review"
+  short_description: "Review sales commission plans, side letters, SIPs, and comp exhibits."
+  default_prompt: "Use this skill to review a commission plan or related legal document, identify ambiguous entitlement language, test edge cases, assess operational burden, and draft Arielle-style comments or safer clause language."
