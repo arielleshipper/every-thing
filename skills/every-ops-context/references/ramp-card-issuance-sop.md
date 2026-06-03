@@ -6,6 +6,8 @@ Use this SOP when converting approved recurring spend into Ramp virtual cards, e
 
 This is finance work. Optimize for traceability, least privilege, explicit approval gates, and evidence-backed verification. Do not guess merchant restrictions, and do not replace durable cards when a later patch can update the same card.
 
+Hard safety rule: do not act in Ramp without explicit human instruction for the specific write action. This is especially strict for issuing funds, creating cards, patching card controls, changing owners or amounts, locking/unlocking cards, terminating cards, or any other production Ramp mutation. Read-only planning and verification are allowed; write scopes alone are never approval.
+
 ## Source Of Truth
 
 - The source sheet should contain a final `Ramp Cards to Issue` tab.
@@ -45,6 +47,7 @@ Before opening Ramp or calling the API:
 - If scopes are missing, authenticate or update app permissions first.
 - Use the smallest practical scope set.
 - Never commit API credentials, secrets, tokens, `.env` files, or local CLI config.
+- Permission availability is not approval to act. Having `cards:write`, `funds:write`, or similar write scopes only means the action is technically possible; still wait for human instruction before using them.
 
 Common scopes:
 
@@ -171,6 +174,8 @@ Do not port whole transcripts between agents. Port a short context packet with t
 
 Ask Arielle before:
 
+- Any Ramp write action unless Arielle has already given explicit instruction for that exact action in the current run.
+- Any issuing of funds, including new funds, fund increases, fund owner changes, or fund restrictions.
 - Any production card creation.
 - Any card patch that changes merchant restrictions, card owner, card amount, or lock date.
 - Any action that requires new Ramp scopes or app permissions.
