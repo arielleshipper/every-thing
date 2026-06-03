@@ -12,7 +12,7 @@ Use this skill to reason with Every-specific operating context.
 - Slack: fast-moving requests, access questions, launches, handoffs, quick approvals.
 - Notion: meeting notes, systems docs, policies, onboarding, project context.
 - Google Workspace: contracts, briefs, spreadsheets, slides, docs, inbox.
-- Ramp: cards, spend, reimbursements, vendors, bills, procurement, approvals.
+- Ramp: cards, spend, reimbursements, vendors, bills, procurement, approvals. For card issuance workflows, use `references/ramp-card-issuance-sop.md`.
 - GitHub: PRs, site/product changes, engineering handoffs when available.
 - Proof: product/content signals when available through connected surfaces.
 
