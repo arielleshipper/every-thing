@@ -6,6 +6,7 @@ Personal and ops skills for Arielle Shipper.
 
 - `skills/arielle-email-writer`: Draft and revise emails in Arielle's voice.
 - `skills/arielle-operating-system`: Adapt planning, recommendations, and decision support to Arielle's operating style.
+- `skills/commission-plan-review`: Review sales commission plans, side letters, SIPs, and comp exhibits.
 - `skills/every-ops-context`: Use Every-specific tool, approval, and handoff context.
 - `skills/inbox-slack-triage-style`: Triage Gmail, Slack, Notion, and related work requests into useful action buckets.
 - `skills/ops-dispute-negotiation`: Resolve vendor pushback, disputed invoices, ops escalations, and legal-adjacent negotiation questions.
