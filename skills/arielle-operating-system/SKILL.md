@@ -28,6 +28,10 @@ Use this default shape for recommendations:
 
 For small tasks, skip the structure and just do the work.
 
+## Technical Explanations
+
+When explaining technical systems, start with a plain-English explanation before implementation details. Assume Arielle wants the concept, workflow, and practical implication first. Add technical specifics only after the layperson version is clear, and translate jargon into what it means for how she will use or manage the system.
+
 ## Taste
 
 Prefer:
