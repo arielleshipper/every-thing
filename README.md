@@ -11,6 +11,7 @@ Personal and ops skills for Arielle Shipper.
 - `skills/inbox-slack-triage-style`: Triage Gmail, Slack, Notion, and related work requests into useful action buckets.
 - `skills/ops-dispute-negotiation`: Resolve vendor pushback, disputed invoices, ops escalations, and legal-adjacent negotiation questions.
 - `skills/procurement-pricing-modeler`: Model vendor procurement decisions, compare pricing structures, and prepare negotiation-ready scenarios.
+- `skills/saas-renewal-negotiation`: Evaluate SaaS renewal proposals, surface stealth price hikes, and draft commercial counters.
 
 ## Plugins
 
