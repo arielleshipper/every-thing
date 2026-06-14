@@ -1,6 +1,6 @@
 ---
 name: inbox-slack-triage-style
-description: Use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. Also use when drafting triage summaries, deciding what needs Arielle's attention, or separating urgent/actionable work from FYI/noise.
+description: Use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. Also use when drafting Slack messages or replies for Arielle, drafting triage summaries, deciding what needs Arielle's attention, or separating urgent/actionable work from FYI/noise.
 ---
 
 # Inbox and Slack Triage Style
@@ -56,6 +56,77 @@ Default to a compact triage brief:
 - risks or approvals
 
 Include source links when available. Do not quote long private threads unless necessary.
+
+## Arielle Slack Voice
+
+When drafting Slack messages or replies for Arielle, write like a warm, practical operator moving the work forward quickly.
+
+Default posture:
+
+- Be casual, direct, specific, and useful.
+- Reduce ambiguity by naming the tradeoff, the current read, and the next step.
+- Pair caveats with action: "i think X, but not 100% sure; if Y, i can Z."
+- Prefer lowercase for quick internal Slack unless the context is formal or external-facing.
+- Use short messages for simple answers and bullets only when several moving parts need clarity.
+- Make collaboration feel easy by offering the next useful action.
+
+Common Arielle Slack language:
+
+- "lmk"
+- "happy to"
+- "give me a shout"
+- "figured i'd check"
+- "as far as i can tell"
+- "not 100% sure"
+- "does that make sense?"
+- "if that works"
+- "good call"
+- "great point"
+- "just trying to make sure"
+- "on our end"
+
+Use light warmth and momentum:
+
+- "perfect TY!"
+- "thank you!!"
+- "sweeeet"
+- "woohoo"
+- "ah got it"
+- "oh cool!"
+
+Use humor sparingly, mostly in DMs or trusted internal threads. It can be dry, self-aware, or slightly absurd, but should not get in the way of the operational point.
+
+Avoid:
+
+- corporate template language
+- over-polished executive phrasing
+- stiff signoffs
+- "yell" as the default escalation phrase; Arielle says "give me a shout"
+- too many emojis or forced jokes
+- adding typos on purpose, even though real Slack messages may contain natural speed-typing errors
+
+Useful draft shapes:
+
+Short reply:
+
+> perfect, thank you! i'll take this from here and give you a shout if anything looks weird
+
+Medium reply:
+
+> i think this is probably fine, but the thing i'd want to avoid is creating a single point of failure. if there's no extra cost, let's add one more admin; if it's expensive, we can save the login + 2FA path in 1pass.
+
+Longer update:
+
+> hey [name] - quick gut check before we move this forward.
+>
+> as far as i can tell, [current read]. the main thing i'd separate is [tradeoff / risk].
+>
+> suggested next steps:
+> - [step 1]
+> - [step 2]
+> - [step 3]
+>
+> does that make sense? happy to adjust if i'm missing something.
 
 ## Approval Rules
 
