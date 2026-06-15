@@ -12,6 +12,7 @@ Personal and ops skills for Arielle Shipper.
 - `skills/ops-dispute-negotiation`: Resolve vendor pushback, disputed invoices, ops escalations, and legal-adjacent negotiation questions.
 - `skills/procurement-pricing-modeler`: Model vendor procurement decisions, compare pricing structures, and prepare negotiation-ready scenarios.
 - `skills/saas-renewal-negotiation`: Evaluate SaaS renewal proposals, surface stealth price hikes, and draft commercial counters.
+- `skills/self-improve`: Turn task feedback, corrections, and workflow friction into durable skill/process improvements.
 
 ## Plugins
 

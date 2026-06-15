@@ -1,0 +1,7 @@
+interface:
+  display_name: "Self Improve"
+  short_description: "Turn task feedback into durable learning"
+  default_prompt: "Use $self-improve to reflect on this task, identify durable lessons, and propose any skill or process updates."
+
+policy:
+  allow_implicit_invocation: true
