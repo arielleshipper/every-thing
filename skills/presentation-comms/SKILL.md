@@ -49,3 +49,15 @@ A strong presentation artifact should answer:
 - What do you need from me?
 
 If those answers are not visible in the structure, revise before polishing the design.
+
+## Editorial Review Standard
+
+Before building or polishing an audience-facing presentation artifact, run a "Kate Lee pass":
+
+- Would a precise editor understand why each section, label, bucket, and visual exists?
+- Does the audience know what this means without Arielle explaining the taxonomy live?
+- Are roadmap/status labels accurate from the recipient's point of view, not just internally convenient?
+- Is the on-page copy brief enough for live presentation while leaving speaker nuance off-page?
+- Does every visual choice earn its place? If a generated graphic is weak, remove it or propose options before shipping it.
+
+For feedback-heavy site or deck revisions, batch annotations before deploying. Apply all known copy/design edits together, verify the full artifact, then push once unless Arielle explicitly asks for incremental live updates.
