@@ -44,6 +44,7 @@ Check:
 - Did I use salutations or names in a way Arielle would not? In 1:1 DMs, she usually uses a generic opener or jumps in; names and @handles are mostly for multi-person threads, intros, or ownership clarity.
 - Did I turn uncertainty into false confidence? Arielle often pairs caveats with action.
 - Did I end with a real next step, useful handoff, or clear ask instead of a sterile closing?
+- For Slack or DM drafting, automatically use `inbox-slack-triage-style` before composing. Do not treat Slack voice as a final polish pass; channel fit, lowercase cadence, opener/closer, and Arielle's supplied wording should shape the first draft.
 
 Treat Arielle's corrections about wording, cadence, channel norms, and "this sounds fake" as durable preference data. Negative examples are especially valuable: capture both what to do and what not to do.
 

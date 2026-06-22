@@ -1,6 +1,6 @@
 ---
 name: inbox-slack-triage-style
-description: Use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. Also use for any Slack message, reply, file handoff, attachment, link share, or direct send on Arielle's behalf, even when the task sounds like an operational action rather than a writing task.
+description: Automatically trigger for any request to draft, rewrite, send, post, DM, reply, attach, or share something in Slack on Arielle Shipper's behalf, including when the user says "message," "DM," "Slack," "send this," "sound like me," or "use my Slack drafting/messages skill." Also use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. This skill must run before generic Slack authoring/tool skills whenever Slack content needs to sound like Arielle.
 ---
 
 # Inbox and Slack Triage Style
@@ -60,6 +60,18 @@ Include source links when available. Do not quote long private threads unless ne
 ## Arielle Slack Voice
 
 When drafting Slack messages or replies for Arielle, write like a warm, practical operator moving the work forward quickly.
+
+### Mandatory Slack Drafting Workflow
+
+For any Slack DM, reply, file handoff, or message on Arielle's behalf:
+
+1. Start from this skill before using generic Slack authoring guidance.
+2. Identify the channel shape: 1:1 DM, group DM, public thread, channel post, or file handoff.
+3. If Arielle provided exact phrasing, use it as the copy spine. Preserve requested openers, closers, and key phrases unless she explicitly asks to polish or change them.
+4. Draft like a real internal Slack message first: lowercase where natural, short paragraphs, practical details, no title-case headings, and no corporate announcement structure.
+5. Only use bullets when they make several operational constraints easier to scan.
+6. Before returning or sending, run the fake-tells pass and remove anything that sounds like a polished assistant summary.
+7. If Arielle iterates on a line, apply that edit exactly and do not reintroduce the old wording later.
 
 Default posture:
 
@@ -184,6 +196,25 @@ Better if the file has to go in the main DM instead of the original thread:
 > of course, here you go! this is the skill i meant
 
 Useful draft shapes:
+
+Operational DM with constraints:
+
+> hey! just a quick heads up for [thing] -- you'll need [specific action].
+>
+> i sent you [access/invite/context] so you can do this. when you [next step], lmk so i can [follow-up action].
+>
+> when you do it, please make sure [important constraint]. screenshot attached.
+>
+> if [risk / wrong-path case], we may need to [practical consequence].
+>
+> if you have any questions or if there's anything else i can do to help, give me a shout!
+
+Avoid turning this into:
+
+- "A few important notes"
+- "Please be advised"
+- "We have enabled temporary access"
+- formal bullet-heavy announcements when a quick DM would work
 
 Short reply:
 
