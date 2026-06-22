@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly Ops Update"
+  short_description: "Prepare and refine weekly ops sync updates."
+  default_prompt: "Use $weekly-ops-update to scout this week’s ops activity, prepare section-specific candidates for approval, coordinate Jalaiyah feedback, update the site, and run the self-improve loop."

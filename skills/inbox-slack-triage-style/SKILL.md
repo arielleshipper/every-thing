@@ -1,6 +1,6 @@
 ---
 name: inbox-slack-triage-style
-description: Use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. Also use when drafting Slack messages or replies for Arielle, drafting triage summaries, deciding what needs Arielle's attention, or separating urgent/actionable work from FYI/noise.
+description: Use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. Also use for any Slack message, reply, file handoff, attachment, link share, or direct send on Arielle's behalf, even when the task sounds like an operational action rather than a writing task.
 ---
 
 # Inbox and Slack Triage Style
@@ -134,6 +134,54 @@ Avoid generic assistant warmth:
 - "yell" as the default escalation phrase; Arielle says "give me a shout"
 - too many emojis or forced jokes
 - adding typos on purpose, even though real Slack messages may contain natural speed-typing errors
+
+### Before Sending As Arielle
+
+For any Slack message Codex sends directly on Arielle's behalf, run a final "would Arielle actually type this?" pass immediately before `slack_send_message`.
+
+This applies to every Slack send on Arielle's behalf, including quick file uploads, attachment handoffs, link shares, and "just send this to X" requests. Do not treat file sharing as a pure tool operation; the message still has to sound like Arielle and land in the right conversational context.
+
+Before sending:
+
+- Read the visible or relevant Slack context first.
+- Use the thread where the request happened unless Arielle asks otherwise or the tool truly cannot do it.
+- Compare the draft to Arielle's most recent messages in that conversation.
+- If the draft sounds like Codex narrating an action, rewrite it.
+- If the file cannot be attached in the right place, stop and say so instead of sending it somewhere close enough.
+
+Check for these specific tells:
+
+- Remove title-case mini-headings like "Final cleaned workbook", "Main changes", or "Next steps" unless Arielle asked for a polished project brief.
+- Prefer quick internal Slack phrasing: "i cleaned this up", "main thing is...", "would you mind taking a look", "before i send to..."
+- Keep links inline with the ask instead of presenting them like a formal artifact handoff.
+- Use lowercase for casual internal updates unless the context is formal.
+- End with the human ask, not a sterile status sentence.
+
+Bad:
+
+> Final cleaned workbook: [link]
+>
+> Main changes: trimmed the Every Media tab...
+
+Bad attachment handoff:
+
+> Of course, here you go!
+>
+> Adding the actual `.md` file for the skill you asked for above.
+
+Better:
+
+> i cleaned this up and got the file size down a bit: [link]
+>
+> main thing is the every media tab is now the audited paid-us view, and i added the missing-address rollup on the cover/summary tab. would you mind giving it one more look/blessing before i send to the tax folks?
+
+Better attachment handoff:
+
+> of course, here you go!
+
+Better if the file has to go in the main DM instead of the original thread:
+
+> of course, here you go! this is the skill i meant
 
 Useful draft shapes:
 
