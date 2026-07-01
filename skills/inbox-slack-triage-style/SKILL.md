@@ -73,6 +73,8 @@ For any Slack DM, reply, file handoff, or message on Arielle's behalf:
 6. Before returning or sending, run the fake-tells pass and remove anything that sounds like a polished assistant summary.
 7. If Arielle iterates on a line, apply that edit exactly and do not reintroduce the old wording later.
 
+This applies even when the user frames the task as sending a file, transcript, link, attachment, screenshot, PDF, Google Doc, Markdown file, or "this" to someone in Slack. Do not treat artifact delivery as separate from Slack voice.
+
 Default posture:
 
 - Be casual, direct, specific, and useful.
@@ -153,13 +155,43 @@ For any Slack message Codex sends directly on Arielle's behalf, run a final "wou
 
 This applies to every Slack send on Arielle's behalf, including quick file uploads, attachment handoffs, link shares, and "just send this to X" requests. Do not treat file sharing as a pure tool operation; the message still has to sound like Arielle and land in the right conversational context.
 
+### Perspective Hygiene
+
+When writing as Arielle, do not let Codex's own analysis voice or perspective slip into the message. Before sending, check whether any framing phrase is really Arielle's posture or whether it is Codex narrating its synthesis.
+
+- Use "my read" only when Arielle is actually giving a tentative read, separating uncertainty, or asking for judgment.
+- Do not use "my read" as a generic heading for summaries Arielle asked Codex to assemble; the message is already implicitly from Arielle.
+- Translate Codex's reasoning into Arielle's natural Slack phrasing, or disclose it as generated instead of blending Codex's perspective into Arielle's voice.
+
+Bad:
+
+> my read:
+> - how it works...
+
+Better:
+
+> quick codex/self-improve summary, with the actual skill attached too.
+>
+> - how it works...
+
+### ChatGPT Disclosure Tag
+
+When Codex sends a substantive Slack message on Arielle's behalf that includes generated synthesis, recommendations, analysis, or rewritten wording, append this final line unless Arielle explicitly says not to:
+
+> _sent via ChatGPT_
+
+Do not add the tag for tiny transactional handoffs like "here you go!", exact user-provided copy, or messages Arielle has explicitly reviewed and approved as her own wording unless she asks for the tag anyway.
+
 Before sending:
 
 - Read the visible or relevant Slack context first.
 - Use the thread where the request happened unless Arielle asks otherwise or the tool truly cannot do it.
 - Compare the draft to Arielle's most recent messages in that conversation.
 - If the draft sounds like Codex narrating an action, rewrite it.
-- If the file cannot be attached in the right place, stop and say so instead of sending it somewhere close enough.
+- If the file cannot be attached in the right place, stop and ask before pasting the content, sending a link, making a canvas, or sending it somewhere close enough.
+- If a file is attached or converted before Slack delivery, verify the attachment is functional and displays the expected content before sending.
+- Do not write third-party framing like "sharing this from Arielle" when sending from Arielle's account.
+- For simple 1:1 file handoffs, default to very short Arielle-style copy such as "here you go!" or "here it is" unless the context calls for more.
 
 Check for these specific tells:
 
@@ -181,6 +213,10 @@ Bad attachment handoff:
 >
 > Adding the actual `.md` file for the skill you asked for above.
 
+Bad third-person handoff:
+
+> Hi Jannik - sharing this as a Markdown transcript from Arielle.
+
 Better:
 
 > i cleaned this up and got the file size down a bit: [link]
@@ -190,6 +226,14 @@ Better:
 Better attachment handoff:
 
 > of course, here you go!
+
+Better very short handoff:
+
+> here you go!
+
+Better if the user asked for an attached file but the tool cannot attach files:
+
+> I can make the `.md`, but I can't attach files through this Slack tool. Want me to paste it in the DM instead, or would you rather send the file yourself?
 
 Better if the file has to go in the main DM instead of the original thread:
 
