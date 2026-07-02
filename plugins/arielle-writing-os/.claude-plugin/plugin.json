@@ -1,0 +1,22 @@
+{
+  "name": "arielle-writing-os",
+  "version": "0.1.0",
+  "description": "A private writing operating system for Arielle Shipper: Every-style ops writing, article development, editorial review, and durable writing memory.",
+  "author": {
+    "name": "Arielle Shipper"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Arielle Writing OS",
+    "shortDescription": "Write ops comms and Every-style articles in Arielle's voice.",
+    "longDescription": "Arielle Writing OS adapts Compound Writing's agent-native structure into a private plugin for Arielle's operational writing, Every-style editorial development, draft review, and visible writing memory.",
+    "developerName": "Arielle Shipper",
+    "category": "Productivity",
+    "capabilities": [
+      "writing",
+      "editing",
+      "workspace-memory"
+    ],
+    "defaultPrompt": "Use Arielle Writing OS to help me turn this into the right writing artifact."
+  }
+}
