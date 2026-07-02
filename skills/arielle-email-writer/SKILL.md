@@ -1,6 +1,6 @@
 ---
 name: arielle-email-writer
-description: draft and revise emails in arielle shipper's voice with subject lines, using a warm, competent, momentum-oriented style that adapts by email type. use when the user wants an email written or rewritten in arielle's voice, especially for sales emails, customer emails, ops emails, or internal donut emails. also use when replying to an existing email thread with gmail context or when scheduling language should reflect calendar availability. prefer user-provided classification if given; otherwise infer the email type from recipients, context, and requested outcome.
+description: Automatically trigger for any request to draft, write, rewrite, send, email, reply, respond, forward, attach, or share something by Gmail/email on Arielle Shipper's behalf. Draft and revise emails in Arielle's voice with subject lines, using a warm, competent, momentum-oriented style that adapts by email type. Use especially for sales emails, customer emails, ops emails, internal donut emails, vendor replies, attachment handoffs, Gmail thread replies, and scheduling language that should reflect calendar availability. This skill must run before generic Gmail tools whenever email content needs to sound like Arielle.
 ---
 
 Draft ready-to-send emails in Arielle Shipper's voice.
@@ -9,6 +9,7 @@ Draft ready-to-send emails in Arielle Shipper's voice.
 
 - Always produce a subject line and a complete email draft unless the user explicitly asks for only one of those.
 - Prefer the user's stated email type if they provide one. Otherwise infer the type from the context.
+- Always use this skill before any Gmail draft, reply, forward, or send on Arielle's behalf. Do not treat Gmail writes as generic connector operations.
 - Supported modes:
   - sales
   - customer
@@ -169,6 +170,17 @@ Avoid:
 - passive-aggressive escalation language
 - fake professionalism
 
+Good quick external ops reply:
+
+> Hi Brian,
+>
+> Thanks! Attaching the latest invoice here. This one has already been paid, so nothing needed on this specific invoice, but we'd love to have future invoices sent to ap@every.to.
+>
+> If your team can also include a bit more detail on the matter discussed on future invoices, that would be helpful on our end.
+>
+> Thanks,
+> Arielle
+
 ### Internal
 
 Goal: move work quickly with minimal ceremony.
@@ -218,6 +230,20 @@ When Gmail is available:
 - read the relevant thread before drafting a reply
 - preserve thread context, recipient expectations, and unresolved questions
 - mirror the appropriate level of context instead of restating the whole thread
+
+## Mandatory Gmail Send Gate
+
+When Arielle asks Codex to send, reply, respond, forward, attach, or share something by email or Gmail, this skill must run before any Gmail send or draft tool call.
+
+Before sending or creating the final draft:
+
+- Read the relevant Gmail thread or source email.
+- Draft the reply in Arielle's voice, not generic competent email voice.
+- Check for dangling add-on sentences, corporate filler, and over-formal phrasing.
+- Make the email sound like Arielle is writing directly, not like Codex is summarizing on her behalf.
+- If the email includes attachments, verify each attachment is the correct file, opens successfully, and displays the expected content before sending. For PDFs created from images, render or visually inspect the PDF pages and confirm they are not blank.
+- If the requested action involves an attachment and the connector cannot attach it, stop and ask before changing the delivery format.
+- If the user asked to send immediately, send only after the send gate passes. If testing behavior, create drafts only and delete them afterward.
 
 When Calendar is available:
 - use it when the user asks for scheduling language, availability checks, or time proposals

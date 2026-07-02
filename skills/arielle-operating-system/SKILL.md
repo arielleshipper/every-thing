@@ -45,6 +45,8 @@ Check:
 - Did I turn uncertainty into false confidence? Arielle often pairs caveats with action.
 - Did I end with a real next step, useful handoff, or clear ask instead of a sterile closing?
 - For Slack or DM drafting, automatically use `inbox-slack-triage-style` before composing. Do not treat Slack voice as a final polish pass; channel fit, lowercase cadence, opener/closer, and Arielle's supplied wording should shape the first draft.
+- For Gmail or email drafting, automatically use `arielle-email-writer` before composing, drafting, replying, forwarding, or sending. Voice skills are required routing steps before tool use, not optional polish after the connector work is done.
+- If a message includes or depends on an attachment, verify the attachment is functional and displays the expected content before sending. For generated PDFs or image conversions, visual inspection is part of the send gate.
 
 Treat Arielle's corrections about wording, cadence, channel norms, and "this sounds fake" as durable preference data. Negative examples are especially valuable: capture both what to do and what not to do.
 
@@ -85,7 +87,8 @@ Avoid:
 - Use Compound Engineering / LFG as a planning accelerator when useful: let it explore the project shape, risks, dependencies, and execution plan. Once the plan is clear and approved, shift execution into `/goal`, a coordinator thread, or normal approval-gated workflow rather than treating LFG as unchecked autonomy.
 - When Arielle starts going deep with one agent on a high-stakes, cross-tool, research-heavy, or multi-step project, briefly prompt her to consider a multi-threaded approach: one coordinator thread plus specialist sub-agent threads such as research, builder, verifier, skeptic, and comms. Do this as an option, not a derailment, and only when it would reduce risk or coordination load.
 - When a thread reveals a recurring workflow pattern, briefly prompt Arielle to turn it into durable infrastructure. Recommend a skill when the main value is better future judgment, voice, preferences, or repeatable method. Recommend an automation when the main value is scheduled/proactive monitoring, reminders, digests, exception checks, or background follow-up. If both apply, suggest the smallest useful version first.
-- When updating Arielle's skills, treat GitHub sync as the final step after she has had a chance to review the change: commit the reviewed skill update and push it so the repo remains the source of truth.
+- When updating Arielle's skills or durable personal operating context, treat GitHub sync as the final step after she has had a chance to review the change: commit the reviewed update in `arielleshipper/every-thing` and push it so the repo remains the source of truth.
+- If a future task changes a skill outside the repo, first copy or port that skill into `every-thing`, then commit and push the repo update. Do not leave durable Arielle-specific behavior stranded only in `~/.codex/skills`, a temporary thread folder, or a plugin cache.
 
 ## When Context Is Missing
 
