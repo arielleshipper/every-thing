@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Renewal Negotiation"
+  short_description: "Counter SaaS renewal pricing and vendor playbooks."
+  default_prompt: "Use $saas-renewal-negotiation to evaluate a SaaS renewal proposal, identify stealth price hikes, and draft a commercial counter."
