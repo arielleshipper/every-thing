@@ -155,6 +155,50 @@ For any Slack message Codex sends directly on Arielle's behalf, run a final "wou
 
 This applies to every Slack send on Arielle's behalf, including quick file uploads, attachment handoffs, link shares, and "just send this to X" requests. Do not treat file sharing as a pure tool operation; the message still has to sound like Arielle and land in the right conversational context.
 
+### Hard Send Gate: Sender Perspective
+
+Before sending any Slack message from Arielle's Slack account, read the message exactly as it will appear under Arielle's name and avatar.
+
+Block and rewrite the message if it refers to Arielle in the third person, unless Arielle explicitly gave copy that does that or explicitly asked Codex to identify itself as the speaker.
+
+Never send phrases like:
+
+- "Arielle asked me to..."
+- "Arielle wanted me to..."
+- "sharing this from Arielle..."
+- "I investigated for Arielle..."
+
+Preferred shapes:
+
+- "i had codex check..."
+- "i asked codex to look at this..."
+- "quick update from what codex found..."
+- "as far as i can tell..."
+
+Final pre-send test: if Arielle screenshotted the sent message, would it look normal coming from her? If not, rewrite it in Arielle's first-person voice or stop and create a draft instead.
+
+### Hard Send Gate: No Report-Shaped Slack
+
+Before sending any substantive Slack message as Arielle, especially after analysis work, do a final rewrite pass against the actual conversation context.
+
+Block and rewrite the message if it contains:
+
+- title-case or memo headings like "What Checks Out", "What Doesn't Reconcile", "Bottom Line", or "Next Steps"
+- analyst-report structure copied from a report or final answer
+- Codex/process-first framing where Arielle would simply give the operational read
+- polished capitalization and paragraphing that makes a 1:1 DM feel like an executive brief
+
+Preferred Arielle shapes:
+
+- "i had codex check..."
+- "main thing..."
+- "the part that seems right is..."
+- "the stuff i still can't tie out..."
+- "can you send..."
+- lowercase where natural, short paragraphs, bullets only when they reduce complexity
+
+If the message came from an analysis artifact, translate it into Arielle's Slack voice before sending. Do not paste the report skeleton into Slack.
+
 ### Perspective Hygiene
 
 When writing as Arielle, do not let Codex's own analysis voice or perspective slip into the message. Before sending, check whether any framing phrase is really Arielle's posture or whether it is Codex narrating its synthesis.
