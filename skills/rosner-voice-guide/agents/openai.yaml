@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rosner Voice Guide"
+  short_description: "Frame and edit essays with Rosner craft principles"
+  default_prompt: "Use $rosner-voice-guide to help frame or edit this essay using Rosner craft principles."
