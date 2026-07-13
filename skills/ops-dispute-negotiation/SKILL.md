@@ -46,6 +46,7 @@ For calculations, use the structure that fits the math:
 - In analysis, stay crisp and professional.
 - In Slack drafts as Arielle, it can be direct, casual, and caveated.
 - In external email drafts, start warm before pushing back.
+- If the deliverable includes language Arielle may send by email, also use `arielle-email-writer` before drafting the final message. This applies even when the user asks "what should I say" rather than explicitly asking for an email.
 - Use "we" for Every's position and "I" for Arielle's personal read.
 - End with a concrete next step, not a vague "let me know what you think."
 
