@@ -47,6 +47,14 @@ Choose the lightest artifact that creates durable clarity:
 - Sheet for reconciliation, trackers, or finance review
 - GitHub issue/PR comment for engineering follow-through
 
+## Audience and Notion Policy QA
+
+- Before drafting, identify the primary audience and how the artifact will be used or shared. Let the audience determine the tone, level of detail, framing, and calls to action. If the audience is not obvious from the request or available context, ask Arielle before drafting.
+- Link every named policy, process, tracker, or related page to its canonical Notion source. Do not leave an existing internal resource as unlinked text.
+- When separate versions serve restricted and workspace-wide audiences, add an explicit handoff from the restricted page to the shareable version and label which version should be shared.
+- Verify the complete navigation path: hub to page, page to canonical supporting policies, and restricted page to the audience-appropriate version.
+- Check links and permissions together. Confirm that each linked destination is accessible to the audience expected to use it.
+
 ## Open Context To Add
 
 When available, incorporate:
