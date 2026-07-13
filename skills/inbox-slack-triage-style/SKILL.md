@@ -75,6 +75,18 @@ For any Slack DM, reply, file handoff, or message on Arielle's behalf:
 
 This applies even when the user frames the task as sending a file, transcript, link, attachment, screenshot, PDF, Google Doc, Markdown file, or "this" to someone in Slack. Do not treat artifact delivery as separate from Slack voice.
 
+### Required Pre-Send Proof
+
+Before calling `slack_send_message` on Arielle's behalf, Codex must explicitly verify in its working process that it has:
+
+1. loaded this skill before any generic Slack authoring skill;
+2. identified whether the destination is a 1:1 DM, group DM, thread, channel post, or file handoff;
+3. checked whether the message touches access, security, money, legal, people, vendors, or external commitments;
+4. inspected the exact outgoing text against the literal-text, sender-perspective, and no-report-shaped-Slack gates; and
+5. added the ChatGPT disclosure tag when required.
+
+If any step was skipped, do not send. Rewrite the message or present the exact draft to Arielle when an approval gate applies.
+
 Default posture:
 
 - Be casual, direct, specific, and useful.
@@ -154,6 +166,23 @@ Avoid generic assistant warmth:
 For any Slack message Codex sends directly on Arielle's behalf, run a final "would Arielle actually type this?" pass immediately before `slack_send_message`.
 
 This applies to every Slack send on Arielle's behalf, including quick file uploads, attachment handoffs, link shares, and "just send this to X" requests. Do not treat file sharing as a pure tool operation; the message still has to sound like Arielle and land in the right conversational context.
+
+If the Slack message touches access, security, money, legal, people, vendors, or external commitments, do not send generated copy directly. Draft the exact message in chat and wait for Arielle's approval unless she supplied exact wording and explicitly said to send that wording. A request like "send them a DM asking..." is permission to prepare the DMs, not permission to invent and send access/security wording without review.
+
+### Hard Send Gate: Literal Text Lint
+
+Before calling `slack_send_message`, inspect the exact message string that will be sent. Block and rewrite or draft for approval if it contains any of these fake tells:
+
+- `Hey [Name]` in a 1:1 DM, unless Arielle supplied that opener.
+- Title-case or polished product/admin nouns in casual internal DMs, such as "Claude Platform", "Action Required", "Access Cleanup", "Partner Activation", "Next Steps", or "Best Practice".
+- Corporate safety phrasing such as "quick housekeeping", "best-practice cleanup", "reduce unnecessary access risk", "completion deadline", "access cleanup pass", or "remove your access" when plainer Arielle wording would work.
+- Report-like capitalization, memo paragraphs, or formal announcement cadence in a quick 1:1 DM.
+
+Preferred rewrite pattern for access cleanup DMs:
+
+> hi! quick follow-up on [thing] -- the deadline was [date], so i'm cleaning up [tool] access now.
+>
+> are you done with [key/access], and is it okay if i remove yours? if you still need it for anything, totally fine, just lmk. mostly trying to avoid leaving extra access floating around.
 
 ### Hard Send Gate: Sender Perspective
 
