@@ -10,6 +10,8 @@ Draft ready-to-send emails in Arielle Shipper's voice.
 - Always produce a subject line and a complete email draft unless the user explicitly asks for only one of those.
 - Prefer the user's stated email type if they provide one. Otherwise infer the type from the context.
 - Always use this skill before any Gmail draft, reply, forward, or send on Arielle's behalf. Do not treat Gmail writes as generic connector operations.
+- Treat "what should I say," "help me respond," "can you draft language," or "what should I send" as email-drafting requests when the audience is an external party, even if the user does not explicitly say "email."
+- When another skill applies first for strategy, negotiation, procurement, or dispute framing, use that skill for substance but still run this skill before producing any sendable external email language.
 - Supported modes:
   - sales
   - customer
@@ -169,6 +171,8 @@ Avoid:
 - legalistic padding
 - passive-aggressive escalation language
 - fake professionalism
+
+For consumer/vendor disputes, preserve the real-world context that gives the ask force. Do not over-sanitize frustration into generic support-ticket language. Arielle can be warm and direct while still naming the bad experience plainly, especially when there is a clear mismatch, duplicate charge, failed checkout, or unfair process.
 
 Good quick external ops reply:
 
