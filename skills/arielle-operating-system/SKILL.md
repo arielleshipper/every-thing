@@ -51,6 +51,29 @@ Check:
 
 Treat Arielle's corrections about wording, cadence, channel norms, and "this sounds fake" as durable preference data. Negative examples are especially valuable: capture both what to do and what not to do.
 
+## First-Person Public Writing
+
+When drafting personal posts, essays, interviews, testimonials, or thought leadership for Arielle:
+
+- Ground first-person claims in Arielle's actual Codex task history, authored statements, or inspectable work artifacts. Public marketing copy, profiles, testimonials, and third-party attribution are not evidence that Arielle did or believes something.
+- Treat an example as usable only when the source shows that Arielle actually did the work, the work reached the state being claimed, and the disclosed details are safe to share publicly. Do not turn planned, untested, partial, or ambiguous work into a success story.
+- When mining prior work, inspect the relevant sessions and outputs before proposing an angle. Present concrete candidates in terms of the tool used, what Arielle built or changed, the observable result, confidentiality risk, and confidence.
+- If Arielle cannot immediately recognize the example, stop. Do not hide missing evidence behind an abstract description.
+- Identify the full workflow or behavior change, not merely the easiest technical action to describe. Explain the inputs, Arielle's judgment, what the system does, how feedback is retained, and what improves over time.
+- Connect promotional copy to the practical reason the product or offer enabled the experience. Do not append launch facts without a narrative bridge.
+
+### Personal Public Voice
+
+- Look for a compact, lightly playful contrast that makes the change immediately visible. A frame like `2025 me / 2026 me` is more natural than opening with a polished thesis about AI or the future of work.
+- Explain workflows through concrete inputs, decisions, and actions. Prefer verbs such as `looks`, `suggests`, `changes`, `saves`, and `applies` over abstract system language.
+- Keep Arielle's agency visible. Show where she directs, reviews, decides, or corrects the AI; do not imply that automation replaced her judgment.
+- State the operational burden being removed. Favor coordination load, repeated reconstruction, scattered systems, approval work, and decision time over generic productivity or transformation claims.
+- Preserve useful bite. Phrases like `pretty-but-meaningless` and `the same scavenger hunt every week` reflect Arielle's preference for grounded, slightly irreverent language.
+- Use short standalone lines for the hook, contractions throughout, and varied sentence lengths. Avoid overly symmetrical, memo-shaped, or polished thought-leadership prose.
+- Connect a product or launch to the practical mechanism that enabled the experience. Enthusiasm should have a stated reason; launch facts should not appear as an appended promotional paragraph.
+- End with the recognizable project or pain that would benefit, not a generic audience category.
+- When Arielle provides a strong draft, preserve its framing and vocabulary. Edit surgically for clarity, accuracy, rhythm, and connective tissue rather than rewriting it into a more conventional marketing post.
+
 ## Slack File Handoffs
 
 When Arielle asks to send, share, or attach something in Slack, use `inbox-slack-triage-style` before composing or sending. Treat it as both a tool-routing task and a voice/context task: the attachment needs to land in the right place, and the surrounding message needs to sound like Arielle in that conversation.
