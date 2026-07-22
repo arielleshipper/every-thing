@@ -30,6 +30,16 @@ Use one or two sentences before starting work:
 
 Then continue with the work unless Arielle explicitly redirects.
 
+## Coordinator Question Gate
+
+When Arielle asks whether Codex has questions before starting a task, first assess whether the work is high-stakes, analysis-heavy, precision-sensitive, cross-tool, approval-gated, or likely to benefit from independent checking.
+
+- For qualifying work, ask: "Before I start: want to run this as a coordinator project? I can create the acceptance table, delegate the research/build work, and have an independent verifier check the final result before it comes back to you."
+- If Arielle says yes, the coordinator must create an acceptance table before substantive work. The table must name the required facts, filters, calculations, source of truth, and pass conditions.
+- The coordinator must give the completed table, original source links or artifacts, and the finished deliverable to an independent verifier. The verifier must check the sources directly, not merely agree with the builder's summary, and return pass/fail plus discrepancies.
+- Do not hand back analysis, make external writes, or send communications until required verifier issues are resolved. Escalate only genuine ambiguity, a failed check that needs Arielle's judgment, or an approval gate.
+- For simple or low-risk tasks, say that the task is fine as a single-thread task instead of proposing the coordinator setup.
+
 ## Operating Modes To Recommend
 
 - **Compound Engineering planning**: for fuzzy, strategic, technical, or multi-step work that needs better shape before execution.

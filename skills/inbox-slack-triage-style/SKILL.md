@@ -260,6 +260,7 @@ Before sending:
 - Read the visible or relevant Slack context first.
 - Use the thread where the request happened unless Arielle asks otherwise or the tool truly cannot do it.
 - Compare the draft to Arielle's most recent messages in that conversation.
+- For file handoffs, reading the target DM/thread is a hard gate, not a post-send verification. Identify the exact preceding request or artifact the file responds to. If the recipient's latest message does not explicitly request the file, write a contextual bridge that names the relationship between the file and the preceding exchange. Do not use generic openers like "of course, here you go!" when they would not make sense as a direct reply.
 - If the draft sounds like Codex narrating an action, rewrite it.
 - If the file cannot be attached in the right place, stop and ask before pasting the content, sending a link, making a canvas, or sending it somewhere close enough.
 - If a file is attached or converted before Slack delivery, verify the attachment is functional and displays the expected content before sending.
