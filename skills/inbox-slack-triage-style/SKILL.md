@@ -1,6 +1,6 @@
 ---
 name: inbox-slack-triage-style
-description: Automatically trigger for any request to draft, rewrite, send, post, DM, reply, attach, or share something in Slack on Arielle Shipper's behalf, including when the user says "message," "DM," "Slack," "send this," "sound like me," or "use my Slack drafting/messages skill." Also use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. This skill must run before generic Slack authoring/tool skills whenever Slack content needs to sound like Arielle.
+description: Automatically trigger for any request to draft, rewrite, send, post, ping, DM, reply, attach, or share something in Slack on Arielle Shipper's behalf, including when the user says "message," "DM," "ping," "Slack," "send this," "sound like me," or "use my Slack drafting/messages skill." Also use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. This skill must run before generic Slack authoring/tool skills whenever Slack content needs to sound like Arielle.
 ---
 
 # Inbox and Slack Triage Style
@@ -74,6 +74,12 @@ For any Slack DM, reply, file handoff, or message on Arielle's behalf:
 7. If Arielle iterates on a line, apply that edit exactly and do not reintroduce the old wording later.
 
 This applies even when the user frames the task as sending a file, transcript, link, attachment, screenshot, PDF, Google Doc, Markdown file, or "this" to someone in Slack. Do not treat artifact delivery as separate from Slack voice.
+
+### Hard Routing Gate
+
+Treat "ping [person]" as an outbound Slack request.
+
+Before any `slack_send_message` or `slack_send_message_draft` on Arielle's behalf, load this skill in the current turn before drafting. This is model-invariant: generic Slack authoring guidance does not satisfy the gate.
 
 ### Required Pre-Send Proof
 

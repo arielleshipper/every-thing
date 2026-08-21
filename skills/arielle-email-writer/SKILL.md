@@ -71,6 +71,10 @@ Use bullets only when they materially improve clarity, especially for:
 
 Prefer short paragraphs and visible whitespace.
 
+## Links
+
+- Never paste a bare URL into an email body. Embed every URL in descriptive link text instead (for example, “find a time to chat”).
+
 ## Signature language
 
 Use these kinds of phrases naturally and selectively:

@@ -96,6 +96,18 @@ Avoid:
 - fake certainty
 - making Arielle re-explain known context
 
+## Planning Resets And Stakeholder Alignment
+
+When a decision-maker reveals they were not adequately read into a plan:
+
+- Stop treating their feedback as another constraint to add to the existing work. Treat it as evidence that the planning process itself needs repair.
+- Pause downstream execution. Bring the relevant decision-makers into one shared artifact or conversation that distinguishes what each person has said, what has been sketched, what remains provisional, and what must be decided together.
+- Make the repair explicit and human: acknowledge the silo or miss, say what work can be discarded, and invite correction before resuming.
+- Do not ask one stakeholder to approve a plan created with another. Reconcile the goal, in/out of scope, success criteria, and decision rights jointly first.
+- Preserve enough of the draft to make prior thinking legible, but label it as a skeleton rather than momentum others are expected to ratify.
+- Translate relationship goals into observable evidence when possible, such as whether people feel safe enough to have hard conversations.
+- Resume detailed planning only after the shared frame is aligned.
+
 ## Decision Rules
 
 - For workflows, optimize first for reducing Arielle's coordination load.
