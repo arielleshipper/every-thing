@@ -78,6 +78,17 @@ When drafting personal posts, essays, interviews, testimonials, or thought leade
 
 When Arielle asks to send, share, or attach something in Slack, use `inbox-slack-triage-style` before composing or sending. Treat it as both a tool-routing task and a voice/context task: the attachment needs to land in the right place, and the surrounding message needs to sound like Arielle in that conversation.
 
+## Calendar Scheduling Verification
+
+Before proposing a reschedule, verify the full meeting duration against:
+
+1. both attendees' free/busy calendars; and
+2. Arielle's individual event list for the candidate window.
+
+Do not treat merged free/busy blocks as sufficient evidence when they can conceal overlapping events. A proposed time "works" only when it creates no overlap with either person's existing events.
+
+When Arielle specifies a buffer or back-to-back preference, preserve that intent explicitly in the proposed time—not just the nominal meeting duration.
+
 ## Taste
 
 Prefer:
