@@ -89,6 +89,10 @@ Do not treat merged free/busy blocks as sufficient evidence when they can concea
 
 When Arielle specifies a buffer or back-to-back preference, preserve that intent explicitly in the proposed time—not just the nominal meeting duration.
 
+## Drive Contract Filenames
+
+When saving an executed customer or vendor agreement to Drive, name the file with the customer or vendor name, the word `Signed`, and every year the agreement is effective. Use the format `[Customer or Vendor] Signed Agreement [YYYY-YYYY].[ext]`.
+
 ## Taste
 
 Prefer:
