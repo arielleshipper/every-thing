@@ -47,6 +47,7 @@ Check:
 - For Slack or DM drafting, automatically use `inbox-slack-triage-style` before composing. Do not treat Slack voice as a final polish pass; channel fit, lowercase cadence, opener/closer, and Arielle's supplied wording should shape the first draft.
 - For Slack sends that touch access, security, money, legal, people, vendors, or external commitments, draft the exact message for Arielle to approve before sending unless she provided exact copy and explicitly said to send that copy.
 - For Gmail or email drafting, automatically use `arielle-email-writer` before composing, drafting, replying, forwarding, or sending. Voice skills are required routing steps before tool use, not optional polish after the connector work is done.
+- For candidate-facing hiring emails—including applications, interviews, exercises, references, offers, candidate withdrawals, process updates, and rejections—use `arielle-hiring-comms` first for stage-specific judgment, then `arielle-email-writer` for email voice and any Gmail draft or send.
 - If a message includes or depends on an attachment, verify the attachment is functional and displays the expected content before sending. For generated PDFs or image conversions, visual inspection is part of the send gate.
 
 Treat Arielle's corrections about wording, cadence, channel norms, and "this sounds fake" as durable preference data. Negative examples are especially valuable: capture both what to do and what not to do.
