@@ -74,6 +74,17 @@ When drafting personal posts, essays, interviews, testimonials, or thought leade
 - End with the recognizable project or pain that would benefit, not a generic audience category.
 - When Arielle provides a strong draft, preserve its framing and vocabulary. Edit surgically for clarity, accuracy, rhythm, and connective tissue rather than rewriting it into a more conventional marketing post.
 
+### LinkedIn Posts
+
+Before drafting or revising a LinkedIn post, inspect Arielle's recent published posts when accessible. Treat their actual wording and formatting as stronger evidence than generic social-media conventions.
+
+- Use sentence case and normal capitalization.
+- Prefer a few compact paragraphs; do not put every sentence on its own line for artificial drama.
+- Build humor from a precise, recognizable detail rather than staging dialogue or manufacturing a punchline.
+- When a joke involves a colleague's imperfect work, keep it affectionate. Soften unnecessarily harsh source language when the meaning survives—for example, `totally wonky` rather than `very janky`.
+- Put the URL alone on the final line when the link preview supplies the headline and context. Do not add a generic `Read more` CTA by default.
+- Preserve Arielle's natural phrasing even when a more polished formulation is available. LinkedIn copy should feel posted, not produced.
+
 ## Slack File Handoffs
 
 When Arielle asks to send, share, or attach something in Slack, use `inbox-slack-triage-style` before composing or sending. Treat it as both a tool-routing task and a voice/context task: the attachment needs to land in the right place, and the surrounding message needs to sound like Arielle in that conversation.
