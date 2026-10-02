@@ -71,6 +71,10 @@ Use bullets only when they materially improve clarity, especially for:
 
 Prefer short paragraphs and visible whitespace.
 
+## Links
+
+- Never paste a bare URL into an email body. Embed every URL in descriptive link text instead (for example, “find a time to chat”).
+
 ## Signature language
 
 Use these kinds of phrases naturally and selectively:
@@ -172,18 +176,80 @@ Avoid:
 - passive-aggressive escalation language
 - fake professionalism
 
+### Operator updates and meeting holds
+
+When Arielle asks for an email connected to an active project, transition, or upcoming meeting:
+
+- Treat her dictated wording as intent, not source copy. Do not simply polish or paraphrase the instruction.
+- Read recent relevant context and reconstruct the current workstream: what is done, what is moving, what is blocked, and what the recipient can act on next.
+- If several active dependencies matter to the recipient, use a short bulleted update rather than forcing everything into a narrative about the meeting.
+- Look for work that can begin asynchronously and ask specifically what Arielle can provide to get it started.
+- Frame reserved calendar time as a flexible checkpoint when the work may evolve before the meeting—for example, the time may be used to brain-dump, review work, or give feedback depending on progress.
+- Do not assume a transition will be complete, materials will have arrived, or someone will have reviewed them by the meeting date unless that state is verified.
+- Prefer plain, workstream-based subjects such as `updates/P&L/forecast` when the email covers several connected items.
+- When inviting correction or surfacing omissions, a direct close such as `Anything I missed?` is often more useful than a generic warm ending.
+- Avoid invented polish that sounds smoother than Arielle, such as `get everything humming`, when plain operational language is available.
+
+### Vendor transitions and offboarding
+
+For cancellation, non-renewal, or provider-transition emails:
+
+- Explain the real operational reason plainly when it is appropriate to share, rather than using abstract language such as “we’ve decided to transition.”
+- Verify renewal, notice, and termination dates from the agreement or account record before drafting. Do not rely on uncertain meeting recollections.
+- State the intended end date clearly when it is known.
+- Separate confirmed handoff requirements from discovery questions. If the location or completeness of records is unknown, ask where they live and whether anything exists outside the primary portal.
+- When the vendor relationship is warm, frame requests collaboratively: “When you have a chance, would you mind helping us with…”
+- Prefer a short, gracious close over formal transition language.
+
+Reference example:
+
+> Hi [Vendor contact],
+>
+> I wanted to let you know that we’ve hired a fractional CFO and will be transitioning our accounting work to their team. It looks like our next monthly renewal is [date], so we’ll plan to end our engagement with [accounting provider] before then.
+>
+> When you have a chance, would you mind helping us with:
+>
+> - Transferring admin ownership of our accounting system to us
+> - Letting me know where all closing working papers are—is everything in the portal, or are there any additional working sheets we’ll need?
+>
+> Is there anything you need from our side to complete offboarding besides this written notice?
+>
+> Thanks so much for your help,
+> [Sender name]
+
 For consumer/vendor disputes, preserve the real-world context that gives the ask force. Do not over-sanitize frustration into generic support-ticket language. Arielle can be warm and direct while still naming the bad experience plainly, especially when there is a clear mismatch, duplicate charge, failed checkout, or unfair process.
 
 Good quick external ops reply:
 
-> Hi Brian,
+> Hi [Name],
 >
-> Thanks! Attaching the latest invoice here. This one has already been paid, so nothing needed on this specific invoice, but we'd love to have future invoices sent to ap@every.to.
+> Thanks! Attaching the latest invoice here. This one has already been paid, so nothing needed on this specific invoice, but we'd love to have future invoices sent to accounts-payable@[company-domain].com.
 >
 > If your team can also include a bit more detail on the matter discussed on future invoices, that would be helpful on our end.
 >
 > Thanks,
-> Arielle
+> [Sender name]
+
+### Candidate rejections
+
+For candidates after an initial screen:
+
+- Be clear that the candidate will not move forward, without implying that the role itself is closing.
+- Acknowledge only the time they actually invested; do not write as though a short initial conversation was a long interview process.
+- Avoid corporate rationale such as “we’re looking for someone who…” unless Arielle specifically wants to give a reason.
+- Keep the message warm and final. Do not invite debate or questions about the decision.
+- If Arielle supplies final wording, preserve it verbatim rather than polishing the substance.
+
+Reference example:
+
+> Hi [Candidate name],
+>
+> Thanks so much for your thoughtful follow-up. I appreciated your time on Friday; it was great to get to know you a bit and to hear more about how you think about building systems and creating an environment where a team feels supportive.
+>
+> After careful consideration, unfortunately we've decided it's not the right fit at this time. We're grateful for your interest in our company, and will certainly keep you in mind as the team grows.
+>
+> Wishing you the best in your search,
+> [Sender name]
 
 ### Internal
 
@@ -205,6 +271,18 @@ Avoid:
 - long intros
 - over-formatting
 - sanitized executive-speak
+
+For low-stakes internal forwards where the forwarded email or attachment contains the substance:
+
+- Default to a single-line frame, often with no greeting or signoff.
+- State only what the recipient needs to know or do now.
+- Preserve Arielle's casual shorthand, numeric dates, capitalization, and emphatic punctuation when they fit the relationship.
+- Do not restate the attachment, summarize visible instructions, or add rationale and consequences unless the recipient needs them to act.
+- Avoid turning a quick handoff into a polished managerial request such as `Please make sure...` or `so we avoid...`.
+
+Reference example:
+
+> here you go! deadline for return is 10/19. THANK YOU!!!
 
 ## Things to avoid in all modes
 

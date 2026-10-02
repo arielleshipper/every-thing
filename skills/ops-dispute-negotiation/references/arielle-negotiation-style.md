@@ -1,6 +1,6 @@
 # Arielle Negotiation Style
 
-Use this reference when a task involves vendor pushback, disputed invoices, ambiguous contract terms, ops escalations, legal-adjacent questions, or relationship-sensitive negotiation.
+Use this reference when a task involves vendor pricing or pushback, disputed invoices, ambiguous contract terms, ops escalations, legal-adjacent questions, or any relationship-sensitive negotiation on Arielle's behalf.
 
 ## Information Processing
 
@@ -21,10 +21,47 @@ Use this reference when a task involves vendor pushback, disputed invoices, ambi
 
 - Pick the cleanest battle. Lead with the most airtight argument and concede weaker points upfront when useful.
 - Anchor with a specific number when the math supports it.
+- Do not anchor against yourself when price discovery is incomplete. First learn the vendor's list price, discount logic, approval levers, and available structures; then counter with a number or package grounded in that information.
+- Reveal the structure of the constraint, not an arbitrary budget ceiling. Candidly explain the use case, frequency, company size, or approval problem so the objection is credible without setting the seller's floor for them.
+- Negotiate against incremental value over the best alternative. Keep a viable free tier, competing vendor, reduced scope, or deferral visible when it is real; never bluff a BATNA.
 - Use the counterparty's own framework against them when possible.
+- Help the counterpart advocate internally. Give the rep a short, repeatable exception case that explains the mismatch, the buyer's credible concessions, and why approval will produce a fast close.
+- Prefer disconfirming questions over a curated feature tour. Ask where coverage is weak, what cannot be done today, and which claims depend on the roadmap.
+- Separate four categories before negotiating: hard limits, proof gates, tradable concessions, and optional offers that require someone else's approval.
+- Never give a concession for free. Tie each give to a return: term for a better first year, speed for price, or marketing value for commercial credit.
+- Expand the deal surface beyond cash. Contract term, signature speed, payment timing, testimonial or logo rights, product feedback, distribution, and partnership value are separate currencies with different marginal costs to each side.
+- Protect commitment asymmetry. A multi-year term does not require paying multiple years upfront, accepting equal pricing in every year, or buying before product fit is validated.
 - Think about the other side's incentives, escalation cost, and ongoing relationship.
 - Maintain the relationship when there is ongoing dependency.
 - Use the right channel. Keep disputes between the contracting parties when the individual/entity distinction matters.
+
+## Commercial Discovery and Vendor Calls
+
+1. Control the agenda around the decision hinge. If price or structure determines whether a product evaluation is worthwhile, address it early instead of completing a generic feature tour first.
+2. State the business need and structural mismatch candidly. Explain why the default package is hard to justify, using the shape of the need rather than disclosing an arbitrary budget ceiling. Honest limitations make later commitments more credible.
+3. Establish the real BATNA and incremental-value test. Name what the free tier, a competitor, reduced scope, or waiting already provides; require the paid proposal to justify only what it adds.
+4. Test value before trading commitment. Use real roles, locations, workflows, or data; ask for known gaps before available features; compare results with alternatives; and separate current capability from roadmap promises.
+5. Do the math in the room. Translate discounts into actual dollars, check billing cadence and total exposure, and calmly restate the mismatch when the seller switches to generic ROI framing.
+6. Map the seller's approval system. Ask which terms finance rewards, who approves exceptions, which concessions change price, and which requests require another team.
+7. Build the rep's internal approval story. Summarize the exception in terms the rep can repeat: why the standard package misfits, what Every will give, what hard limits remain, and how quickly an approved structure can close.
+8. Package concessions explicitly. Name what Arielle can give, what she cannot give, and what she expects in return. Favor a bounded package over a vague request to "do better."
+9. Use authority as a speed lever when accurate. If Arielle is the signatory and can close quickly, say so. Preserve internal approval boundaries for partnership, legal, budget, or other decisions she does not own.
+10. Match non-cash value to the vendor's current priority. A relevant launch, product-feedback, or distribution asset is stronger than a generic promise. Frame unapproved assets as conditional and keep them separate from standard testimonial or logo rights.
+11. Set hard limits plainly and maintain conversational control: maximum term, invoicing cadence, prepayment exposure, proof needed before signing, and product requirements. Finish the point when interrupted, without becoming combative.
+12. Keep the tone warm, curious, and lightly candid. Use rapport, shared connections, and humor to lower defensiveness, then return to the economic mismatch instead of debating every sales premise.
+13. End with a written deliverable, owner, and deadline. Ask for structured options that identify cash by year and the commitment attached to each discount.
+14. After the call, compare each option by first-year cash, later-year cash, total commitment, effective unit price, obligations, and exit risk. Then make a specific counter.
+
+### Reusable package language
+
+- "Our need is [discrete or uncertain], so the standard [term or tier] is hard to justify."
+- "The paid tier needs to earn its incremental cost over [free tier, competitor, reduced scope, or waiting]."
+- "Before we go through the full feature set, where does the product not meet this use case today?"
+- "What would you need to show internally to get [target structure] approved?"
+- "If we give on [term, speed, or proof], year one needs to be materially more favorable."
+- "I can do [bounded concession], I cannot do [hard limit], and I can close by [credible timing]."
+- "I may be able to offer [partnership asset], subject to [owner]'s approval. Treat that separately from standard testimonial or logo rights."
+- "Please send two or three options showing the cash due in each year and the commitment attached to each discount."
 
 ## Risk Posture
 

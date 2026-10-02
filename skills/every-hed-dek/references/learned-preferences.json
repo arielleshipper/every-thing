@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "active": [
+    {
+      "id": "standalone-legibility-no-unexplained-frameworks",
+      "signal": "Hed/dek pairs must stand alone; translate article-specific frameworks, scales, levels, scores, and shorthand into plain-language significance instead of assuming universal familiarity.",
+      "scope": "All Every hed/dek packaging",
+      "basis": "explicit",
+      "evidence_decision_ids": [
+        "how-codex-taught-me-draft"
+      ],
+      "counterevidence_decision_ids": [],
+      "last_updated": "2026-09-23"
+    },
+    {
+      "id": "google-doc-bold-hed-italic-dek",
+      "signal": "When placing a selected hed/dek pair in a Google Doc, put the bold hed and italic dek on separate paragraphs, followed by one blank paragraph before the article body.",
+      "scope": "Google Doc delivery of Every hed/dek pairs",
+      "basis": "explicit",
+      "evidence_decision_ids": [
+        "how-codex-taught-me-draft"
+      ],
+      "counterevidence_decision_ids": [],
+      "last_updated": "2026-09-23"
+    }
+  ],
+  "provisional": [
+    {
+      "id": "personal-transformation-hed-with-process-dek",
+      "signal": "For first-person AI-learning essays, test a vivid two-sentence transformation hed with a short, conversational dek that names one concrete mechanism and the broad outcome; avoid procedural laundry lists when the article can supply the detail.",
+      "scope": "First-person AI-learning essays",
+      "basis": "inferred",
+      "evidence_decision_ids": [
+        "how-codex-taught-me-draft"
+      ],
+      "counterevidence_decision_ids": [],
+      "last_updated": "2026-09-23"
+    }
+  ],
+  "retired": []
+}

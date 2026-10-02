@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Usage Report"
+  short_description: "Measure usage across AI apps, models and days"
+  default_prompt: "Use $ai-usage-report to run my full AI usage report for the last seven days."

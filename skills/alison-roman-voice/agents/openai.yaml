@@ -1,0 +1,4 @@
+interface:
+  display_name: "Alison Roman Voice"
+  short_description: "Draft and edit in a bossy-casual Roman register"
+  default_prompt: "Use $alison-roman-voice to brainstorm or edit this piece with conversational directness, dry wit, and a plain landing."

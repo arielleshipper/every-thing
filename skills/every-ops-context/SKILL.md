@@ -19,6 +19,7 @@ Use this skill to reason with Every-specific operating context.
 ## Operating Principles
 
 - Identify the canonical source before making changes.
+- For Every-branded marketing, positioning, messaging, voice, copy, or launch work, read the current relevant guidance from `https://github.com/EveryInc/Marketing-OS` at task time; treat that repository as canonical and do not rely on locally copied Marketing OS skills.
 - Preserve approval gates around money, legal, access, people, and public-facing changes.
 - For Ramp, do not perform write actions without explicit human instruction for the specific action. This is especially strict for issuing funds, creating cards, patching spend controls, changing owners or amounts, locking/unlocking cards, terminating cards, or any production mutation.
 - Prefer creating one clear artifact over spreading updates across several tools.
