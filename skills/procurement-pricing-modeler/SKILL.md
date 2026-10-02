@@ -21,10 +21,11 @@ Use this skill to turn messy procurement context into a clear pricing model and 
 8. Separate steady-state from ramp. First calculate cost if the company is at the target usage immediately. Then calculate month-by-month cost under a realistic ramp from current usage to each forecast case.
 9. Quantify optionality and commitment risk. Compare monthly usage billing against annual prepay, minimum commits, underutilization rules, overage rules, rollover, true-up, refunds, cancellation rights, and expansion triggers.
 10. Scope implementation work. Identify whether engineering, data migration, admin setup, security review, deliverability/reputation work, or user retraining is required. Keep this separate from pure pricing unless the user asks for all-in cost.
-11. Calibrate negotiation paths. For the decision itself, generate 2-4 possible approaches such as accept/pay and move on, ask for a revised structure, push back with a specific counter, or escalate. This is a judgment calibration tool, separate from conservative/base/aggressive usage modeling.
-12. Pick the cleanest battle. When there are multiple plausible asks, lead with the most logically airtight one and avoid diluting it with weaker arguments. Concede or ignore low-value points when doing so makes the core ask easier to accept.
-13. Convert ambiguity into vendor asks. If terms are missing, produce crisp questions about underutilization, overutilization, billing unit definitions, active vs stored units, blended usage, and migration requirements.
-14. Return receipts. Present the numbers in concise tables, then give negotiation talking points tied to those numbers.
+11. Map the negotiation variables. State the credible BATNA and incremental paid value, then separate hard limits, proof gates, tradable concessions, and optional offers requiring another owner's approval. Treat term, signature speed, payment timing, testimonial or logo rights, product feedback, and broader partnership value as distinct currencies. Write the short internal exception case the vendor rep can carry to its approvers.
+12. Calibrate negotiation paths. For the decision itself, generate 2-4 possible approaches such as accept/pay and move on, ask for a revised structure, push back with a specific counter, or escalate. This is a judgment calibration tool, separate from conservative/base/aggressive usage modeling.
+13. Pick the cleanest battle. When there are multiple plausible asks, lead with the most logically airtight one and avoid diluting it with weaker arguments. Concede or ignore low-value points when doing so makes the core ask easier to accept.
+14. Convert ambiguity into vendor asks. If terms are missing, produce crisp questions about underutilization, overutilization, billing unit definitions, active vs stored units, blended usage, migration requirements, and which concessions unlock which discounts.
+15. Return receipts. Present the numbers in concise tables, then give negotiation talking points tied to those numbers.
 
 ## Modeling Standards
 
@@ -37,8 +38,13 @@ Use this skill to turn messy procurement context into a clear pricing model and 
 - Prefer ranges over false precision when forecasts are uncertain.
 - When comparing billing primitives, model the unit that best matches actual product behavior, not just the vendor's default category.
 - Treat vendor forecasts as evidence, not truth. Compare them against internal usage data and explicitly name the delta.
+- Compare the paid proposal against the best viable alternative, including a free tier, reduced scope, challenger, or deferral. Do not treat the vendor's full-category ROI story as proof of incremental paid value.
+- Test product fit against real use cases before offering a longer commitment. Treat roadmap items and promised future coverage as upside, not current value.
 - Ask for call transcripts or meeting notes when vendor conversations contain pricing nuance that did not make it into an email or quote.
-- Anchor with a specific number or structure when the math supports it. Avoid vague asks like "can you do better?" when there is a defensible target.
+- During initial price discovery, do not anchor against yourself before the vendor reveals its price, discount logic, and approval levers. Ask for structured options first. Then anchor with a specific number or package when the math supports it; avoid a vague "can you do better?" once there is a defensible target.
+- Model multi-year offers by first-year cash, each later year's cash, total committed value, invoicing cadence, and exit risk. Never treat a multi-year term as equivalent to multi-year prepayment.
+- Do not give concessions away independently. Link each give to a return and make conditional offers subject to the correct internal owner's approval.
+- Value standard customer proof separately from broader partnership assets. A testimonial or logo right is not the same consideration as sponsored content, distribution, product launch support, or strategic co-marketing.
 - Use the vendor's own framework when it helps. If their billing primitive, discount logic, or usage formula is reasonable but applied badly, keep the framework and challenge the application.
 - Include cost-of-fight judgment. A technically valid pushback may not be worth pursuing if the savings are small, the relationship cost is high, or the implementation distraction outweighs the benefit.
 - Distinguish the principled answer from the likely practical outcome when vendor behavior, renewal leverage, or relationship dynamics matter.
@@ -48,6 +54,8 @@ Use this skill to turn messy procurement context into a clear pricing model and 
 - For procurement intake questions, read `references/intake-checklist.md`.
 - For output structures and negotiation language, read `references/output-templates.md`.
 - For common billing primitives and modeling traps, read `references/billing-primitives.md`.
+- For a concrete initial-pricing-call example that maps live moves to vendor responses and reusable rules, read `references/compensation-data-pricing-discovery-example.md` when preparing or evaluating a commercial discovery call.
+- For Arielle's personal negotiation posture and commercial discovery-call playbook, read `../ops-dispute-negotiation/references/arielle-negotiation-style.md`.
 - For broader dispute, escalation, or legal-adjacent pushback outside procurement pricing, use the `ops-dispute-negotiation` skill instead.
 
 ## Calculator Script
@@ -68,5 +76,6 @@ Choose the smallest useful deliverable:
 - Pricing table: normalized cost by vendor and usage scenario, using the comparison unit that makes the vendors comparable.
 - Ramp model: month-by-month cost from current usage to target usage.
 - Negotiation memo: receipts-backed talk track for the vendor.
+- Vendor call plan: decision hinge, BATNA, proof gates, concession ledger, seller approval path, internal exception case, and desired next step.
 - Vendor questions: missing terms, pricing clarifications, or a target ask to bring into the next call.
 - Internal recommendation: preferred option, conditions, implementation scope, and decision risks.

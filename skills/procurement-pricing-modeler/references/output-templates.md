@@ -48,19 +48,55 @@ We are willing to commit when the economics justify it, but the current proposal
 ## Vendor Call Prep
 
 ```markdown
+Call objective:
+Decision hinge:
+Best viable alternative:
+Incremental value the paid offer must prove:
+
 What we believe:
 - Current usage:
 - Expected 12-month range:
 - Comparable price target:
 - Main concern:
 - Implementation scope:
+- Structural mismatch with the standard offer:
+
+Proof gates:
+-
+
+Hard limits:
+-
+
+Seller's likely approval path:
+- Decision-maker:
+- Exception criteria:
+- Internal exception case we are giving the rep:
 
 Questions to ask:
-1. What exactly counts as a billable [unit]?
-2. What happens if actual usage is below the committed amount?
-3. What happens if usage exceeds the committed amount?
-4. Can you quote pricing for current, conservative, base, and aggressive usage?
-5. Can the structure match our expected ramp instead of charging for end-state usage on day one?
+1. Where does the product not support our use case today?
+2. Which capabilities are live versus planned?
+3. What exactly counts as a billable [unit]?
+4. What happens if actual usage is below or above the committed amount?
+5. Which terms or concessions change the price, and who approves exceptions?
+6. Can you quote pricing for current, conservative, base, and aggressive usage?
+7. Can the structure match our expected ramp instead of charging for end-state usage on day one?
+8. Can you send written options showing cash by year and the commitment attached to each discount?
+
+Desired next step, owner, and deadline:
+```
+
+## Concession Ledger
+
+Use before offering a package. Do not spend a concession the vendor has said it does not value.
+
+```markdown
+| Variable | Hard limit, proof gate, tradable, or conditional | Cost to us | Value to vendor | Internal owner | Return required | Status |
+|---|---|---:|---:|---|---|---|
+| Contract term | Tradable |  |  |  |  |  |
+| Signature timing | Tradable |  |  |  |  |  |
+| Payment timing | Tradable |  |  |  |  |  |
+| Testimonial / logo | Conditional |  |  |  |  |  |
+| Partnership / distribution | Conditional |  |  |  |  |  |
 ```
 
 ## Internal Recommendation

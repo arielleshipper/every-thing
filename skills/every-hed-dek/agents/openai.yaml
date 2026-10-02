@@ -1,0 +1,4 @@
+interface:
+  display_name: "Every Hed + Dek"
+  short_description: "Draft and learn from headline/dek choices"
+  default_prompt: "Use $every-hed-dek to draft headline and dek options for this article."

@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Usage Dashboard"
+  short_description: "Operate your private local AI usage dashboard"
+  default_prompt: "Use $ai-usage-dashboard to set up or open my local AI usage dashboard."
+policy:
+  allow_implicit_invocation: true

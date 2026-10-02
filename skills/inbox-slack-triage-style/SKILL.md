@@ -1,6 +1,6 @@
 ---
 name: inbox-slack-triage-style
-description: Automatically trigger for any request to draft, rewrite, send, post, DM, reply, attach, or share something in Slack on Arielle Shipper's behalf, including when the user says "message," "DM," "Slack," "send this," "sound like me," or "use my Slack drafting/messages skill." Also use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. This skill must run before generic Slack authoring/tool skills whenever Slack content needs to sound like Arielle.
+description: Automatically trigger for any request to draft, rewrite, send, post, ping, DM, reply, attach, or share something in Slack on Arielle Shipper's behalf, including when the user says "message," "DM," "ping," "Slack," "send this," "sound like me," or "use my Slack drafting/messages skill." Also use when triaging Arielle Shipper's Gmail, Slack, Notion tasks, work requests, follow-ups, unread messages, or daily/weekly priority queues. This skill must run before generic Slack authoring/tool skills whenever Slack content needs to sound like Arielle.
 ---
 
 # Inbox and Slack Triage Style
@@ -75,6 +75,12 @@ For any Slack DM, reply, file handoff, or message on Arielle's behalf:
 
 This applies even when the user frames the task as sending a file, transcript, link, attachment, screenshot, PDF, Google Doc, Markdown file, or "this" to someone in Slack. Do not treat artifact delivery as separate from Slack voice.
 
+### Hard Routing Gate
+
+Treat "ping [person]" as an outbound Slack request.
+
+Before any `slack_send_message` or `slack_send_message_draft` on Arielle's behalf, load this skill in the current turn before drafting. This is model-invariant: generic Slack authoring guidance does not satisfy the gate.
+
 ### Required Pre-Send Proof
 
 Before calling `slack_send_message` on Arielle's behalf, Codex must explicitly verify in its working process that it has:
@@ -83,7 +89,7 @@ Before calling `slack_send_message` on Arielle's behalf, Codex must explicitly v
 2. identified whether the destination is a 1:1 DM, group DM, thread, channel post, or file handoff;
 3. checked whether the message touches access, security, money, legal, people, vendors, or external commitments;
 4. inspected the exact outgoing text against the literal-text, sender-perspective, and no-report-shaped-Slack gates; and
-5. added the ChatGPT disclosure tag when required.
+5. verified that the fully rendered message will contain exactly one disclosure, preferring platform-native attribution when available.
 
 If any step was skipped, do not send. Rewrite the message or present the exact draft to Arielle when an approval gate applies.
 
@@ -247,13 +253,33 @@ Better:
 >
 > - how it works...
 
-### ChatGPT Disclosure Tag
+### ChatGPT Disclosure
 
-When Codex sends a substantive Slack message on Arielle's behalf that includes generated synthesis, recommendations, analysis, or rewritten wording, append this final line unless Arielle explicitly says not to:
+Ensure AI-assisted Slack messages are disclosed exactly once.
 
-> _sent via ChatGPT_
+Prefer platform-native attribution automatically added by the sending surface or connector, such as `Sent using @ChatGPT`. When native attribution will appear, do not add a manual `_sent via ChatGPT_` line to the message body.
 
-Do not add the tag for tiny transactional handoffs like "here you go!", exact user-provided copy, or messages Arielle has explicitly reviewed and approved as her own wording unless she asks for the tag anyway.
+### Computer-Use Sends
+
+When sending through computer use in Slack's desktop or web UI, Slack receives ordinary user-interface input under Arielle's account. This path does not add a native `Sent using @ChatGPT` attribution.
+
+Treat native attribution as absent for computer-use sends unless it is visibly present in the composed or posted message.
+
+- For substantive generated synthesis, analysis, recommendations, or rewritten wording, include exactly one natural disclosure in the approved message, such as "i had codex check..."
+- For exact user-provided copy or tiny transactional messages, do not add unnecessary disclosure.
+- After sending, inspect the posted message itself and verify that the required disclosure appears exactly once.
+
+Use a manual disclosure only when:
+
+- the platform does not provide visible native attribution;
+- the message requires disclosure under the rules below; and
+- Arielle has not explicitly asked to omit it.
+
+If the connector's behavior is unknown, inspect its documentation or a recent message sent through the same path before composing the final payload. The pre-send check must consider the fully rendered message, including platform-added labels—not only the text supplied to the tool.
+
+Never allow both native and manual disclosure to appear on the same message.
+
+Substantive Slack messages on Arielle's behalf that include generated synthesis, recommendations, analysis, or rewritten wording require disclosure. Tiny transactional handoffs like "here you go!" and exact user-provided copy do not require an additional disclosure unless Arielle asks for one.
 
 Before sending:
 

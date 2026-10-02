@@ -32,6 +32,14 @@ Send the proposed terms by email before the first renewal call. Forces the vendo
 
 If the vendor refuses to send pricing async ("we'd like to discuss it live"), that's the CSM dodge. Insist on a written proposal or open the call with: "What's the proposed pricing?" — get the number on the record before any framing.
 
+### Prepare the live-call concession map
+
+Before any necessary call, separate hard limits, proof gates, tradable concessions, and offers requiring another owner's approval. Include term, signature timing, payment timing, testimonial or logo rights, product feedback, and broader partnership assets when relevant.
+
+Track the vendor's response to each possible concession. Stop offering a variable once the vendor says it has no value. Give the account rep a short internal exception case it can repeat to finance: the economic mismatch, the buyer's credible gives, the hard limits, and the close timing.
+
+For concrete call mechanics and a concession-response ledger, read `../procurement-pricing-modeler/references/compensation-data-pricing-discovery-example.md`. Use the example for live-call behavior, not as a substitute for anchoring renewal pricing in writing.
+
 ## Step 3: Decode their counter
 
 When the vendor sends a counter, run four checks in this order:
@@ -106,6 +114,7 @@ When asked to evaluate a renewal proposal, return:
 
 ## Related skills
 
+- `procurement-pricing-modeler` — for scenario modeling, call preparation, concession mapping, and initial-purchase negotiation
 - `vendor-agreement-review` — clause-level legal review of the agreement
 - `saas-msa-review` — for the underlying master services agreement
 - `renewal-tracker` — for tracking upcoming renewal deadlines across the portfolio

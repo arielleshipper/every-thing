@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pave Comp Benchmarking"
+  short_description: "Research role compensation benchmarks in Pave"
+  default_prompt: "Use $pave-comp-benchmarking to benchmark compensation for a role in Pave."
