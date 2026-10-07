@@ -176,6 +176,14 @@ Avoid:
 - passive-aggressive escalation language
 - fake professionalism
 
+### Recipient-aware completion updates
+
+When confirming a change made for the person receiving the email:
+
+- Write from the recipient's perspective: say `your email`, `your account`, or `your invite` rather than referring to the recipient in the third person.
+- State the concrete result they should now see, such as `There should be a Ramp invite in your inbox now.`
+- Before sending, check that the greeting, pronouns, and description of the completed action all address the same person.
+
 For consumer/vendor disputes, preserve the real-world context that gives the ask force. Do not over-sanitize frustration into generic support-ticket language. Arielle can be warm and direct while still naming the bad experience plainly, especially when there is a clear mismatch, duplicate charge, failed checkout, or unfair process.
 
 Good quick external ops reply:
