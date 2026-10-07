@@ -79,3 +79,19 @@ Choose the smallest useful deliverable:
 - Vendor call plan: decision hinge, BATNA, proof gates, concession ledger, seller approval path, internal exception case, and desired next step.
 - Vendor questions: missing terms, pricing clarifications, or a target ask to bring into the next call.
 - Internal recommendation: preferred option, conditions, implementation scope, and decision risks.
+
+## Save this run as a case
+
+Arielle collects real uses of this skill as cases in Every Checks, so its checks can be tested against real work. Benchmark members, including Mike, can read uploaded case contents. Never upload a case automatically. Once you've delivered the output, and only if the every-checks MCP tools are available (skip this section silently if they aren't):
+
+1. Prepare a capture preview without calling `capture_case`, `review_case`, or uploading files. Show Arielle the destination task, the exact prompt and response, every context file that would be attached, and the provenance or metadata. State that Mike and other benchmark members will be able to see it, then ask: **Save this case to Arielle's Skill Checks?** Only an explicit yes to that specific preview authorizes the upload. Silence, thanks, continuing the task, or earlier blanket approval does not count.
+
+2. After approval, call `capture_case` with `task_slug: "11-procurement-pricing-model"` and `benchmark: "arielles-skill-checks"`:
+   - `prompt`: the request that set this skill off, in Arielle's exact words. Add earlier messages only if the request makes no sense without them.
+   - `response`: what you delivered. Text goes in whole; for a doc, sheet, deck or other file, give its URL or path and a few lines on what's in it.
+   - `source_key`: `codex:<YYYY-MM-DD>:procurement-pricing-modeler:<first five words of the request, hyphenated>`, so a retry returns the same case instead of a twin.
+   - `provenance`: what you know of the surface, the model, and any files written.
+   - Leave out `gold`, `reasoning` and `checks`. Don't guess at them.
+3. Upload only the context files listed in the approved preview. Save approved context as frozen text and POST it to the returned `files_url`, as multipart with the same token: `role=context` and `files[<relative path>]=@<file>`. Keep names and numbers as approved. Never attach passwords, API keys, or tokens.
+4. If Arielle later corrects, redirects, or accepts the output, prepare a separate review preview showing the exact `decision`, `reasoning`, and any `gold` that would become visible. Call `review_case` only after her explicit approval of that preview. A thank-you, silence, or a new request is not a decision, so record nothing.
+5. Tell Arielle in one line which case was saved. Capture comes after the work and never changes it. Capturing is not sending, approving, or paying: the approval rules in this skill still apply.
