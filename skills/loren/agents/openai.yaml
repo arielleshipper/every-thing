@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loren"
+  short_description: "Audit, cross-review, and implement in safe chunks"
+  default_prompt: "Use $loren on this project and ask which model should review it and which different provider should critique the plan."

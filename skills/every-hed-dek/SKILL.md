@@ -78,6 +78,18 @@ The directory containing this `SKILL.md` is the canonical copy of the skill and 
 - Apply the case and punctuation conventions in the house-style reference.
 - Favor concrete nouns, verbs, outcomes, and tradeoffs over generic AI futurism or corporate language.
 
+### Concrete pattern: practical how-to progression
+
+For a practical how-to article, test a direct outcome-and-method hed, then let the dek add the number of steps and the reader's before-and-after shift. A dek can be longer and more specific when that progression is the payoff; it need not always compress to one mechanism and one broad outcome.
+
+Example from Arielle's published article, *How Codex Taught Me*:
+
+> **Hed:** How to Get Better at AI by Asking AI
+>
+> **Dek:** Five prompts that took me from one-off chats to delegating whole projects to teams of agents
+
+The hed carries the broad promise and method. The dek adds the count and makes the change concrete, from one-off chats to delegating whole projects. Treat this as one successful example, not a default formula, and use a count or transformation only when the article supports it.
+
 ## Google Doc presentation
 
 When placing a selected pair into an article's Google Doc, put the hed in bold on its own paragraph and the dek in italics on the next paragraph. Follow the dek with one blank paragraph before the article body. Preserve the article body and any unrelated formatting.

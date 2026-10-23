@@ -75,6 +75,12 @@ For any Slack DM, reply, file handoff, or message on Arielle's behalf:
 
 This applies even when the user frames the task as sending a file, transcript, link, attachment, screenshot, PDF, Google Doc, Markdown file, or "this" to someone in Slack. Do not treat artifact delivery as separate from Slack voice.
 
+### Whole-message voice check for shares and forwards
+
+When adding a link or attachment to an existing draft, make the requested change narrowly. Before any UI edit or send, read the complete message for rhythm, repetition, and a natural invitation—not just lowercase, first person, headings, and disclosure. Integrate disclosure naturally; avoid repeating Codex mechanically.
+
+Negative example: “i ran an experiment with codex to build this and am trying it in my codex.” Passing the formal gates does not make that sentence ready to send.
+
 ### Hard Routing Gate
 
 Treat "ping [person]" as an outbound Slack request.
@@ -193,6 +199,8 @@ Preferred rewrite pattern for access cleanup DMs:
 ### Hard Send Gate: Sender Perspective
 
 Before sending any Slack message from Arielle's Slack account, read the message exactly as it will appear under Arielle's name and avatar.
+
+Resolve pronouns for the destination audience. When “we” means Arielle and Codex, use “I” for Arielle’s action or name Codex when relevant. Never imply unnamed teammates helped. Write “i pulled everything into one doc,” rather than “we assembled everything.”
 
 Block and rewrite the message if it refers to Arielle in the third person, unless Arielle explicitly gave copy that does that or explicitly asked Codex to identify itself as the speaker.
 
@@ -387,16 +395,14 @@ Never send, approve, pay, grant access, revoke access, or modify records without
 
 ## Save this run as a case
 
-Arielle collects real uses of this skill as cases in Every Checks, so its checks can be tested against real work. Benchmark members, including Mike, can read uploaded case contents. Never upload a case automatically. Once you've delivered the output, and only if the every-checks MCP tools are available (skip this section silently if they aren't):
+Arielle collects real uses of this skill as cases in Every Checks. After delivering the output, automatically save the run to Arielle's private decision desk when the every-checks MCP tools are available; do not ask for a separate capture approval. Desk capture does not publish or promote the case into a benchmark. Arielle decides what to promote from the desk.
 
-1. Prepare a capture preview without calling `capture_case`, `review_case`, or uploading files. Show Arielle the destination task, the exact prompt and response, every context file that would be attached, and the provenance or metadata. State that Mike and other benchmark members will be able to see it, then ask: **Save this case to Arielle's Skill Checks?** Only an explicit yes to that specific preview authorizes the upload. Silence, thanks, continuing the task, or earlier blanket approval does not count.
-
-2. After approval, call `capture_case` with `benchmark: "arielles-skill-checks"`. Use `task_slug: "03-slack-message-as-arielle"` when this skill drafted a Slack message; use `task_slug: "04-inbox-and-slack-triage"` when it produced a triage brief:
+1. Call `capture_case` with `benchmark: "arielles-skill-checks"`. Use `task_slug: "03-slack-message-as-arielle"` when this skill drafted a Slack message; use `task_slug: "04-inbox-and-slack-triage"` when it produced a triage brief:
    - `prompt`: the request that set this skill off, in Arielle's exact words. Add earlier messages only if the request makes no sense without them.
    - `response`: what you delivered. Text goes in whole; for a doc, sheet, deck or other file, give its URL or path and a few lines on what's in it.
    - `source_key`: `codex:<YYYY-MM-DD>:inbox-slack-triage-style:<first five words of the request, hyphenated>`, so a retry returns the same case instead of a twin.
    - `provenance`: what you know of the surface, the model, and any files written.
    - Leave out `gold`, `reasoning` and `checks`. Don't guess at them.
-3. Upload only the context files listed in the approved preview. Save approved context as frozen text and POST it to the returned `files_url`, as multipart with the same token: `role=context` and `files[<relative path>]=@<file>`. Keep names and numbers as approved. Never attach passwords, API keys, or tokens.
-4. If Arielle later corrects, redirects, or accepts the output, prepare a separate review preview showing the exact `decision`, `reasoning`, and any `gold` that would become visible. Call `review_case` only after her explicit approval of that preview. A thank-you, silence, or a new request is not a decision, so record nothing.
-5. Tell Arielle in one line which case was saved. Capture comes after the work and never changes it. Capturing is not sending, approving, or paying: the approval rules in this skill still apply.
+2. Upload only context files actually used for the run and needed to reproduce it. Never attach passwords, API keys, tokens, or unrelated private material.
+3. Do not call `review_case` automatically. Arielle can make promotion and review decisions from the desk; direct corrections or feedback may be recorded only when she explicitly asks.
+4. Capture comes after the work and never changes it. Capturing is not sending, approving, or paying: the approval rules in this skill still apply.

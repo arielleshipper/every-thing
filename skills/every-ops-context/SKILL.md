@@ -22,6 +22,7 @@ Use this skill to reason with Every-specific operating context.
 - For Every-branded marketing, positioning, messaging, voice, copy, or launch work, read the current relevant guidance from `https://github.com/EveryInc/Marketing-OS` at task time; treat that repository as canonical and do not rely on locally copied Marketing OS skills.
 - Preserve approval gates around money, legal, access, people, and public-facing changes.
 - For Ramp, do not perform write actions without explicit human instruction for the specific action. This is especially strict for issuing funds, creating cards, patching spend controls, changing owners or amounts, locking/unlocking cards, terminating cards, or any production mutation.
+- After a Ramp write, do not treat a dismissed modal, disabled button, spinner, or success toast as proof of completion. Re-read the authoritative record and relevant activity log. Verify both the requested field change and any resulting external action, such as a newly sent vendor invite.
 - Prefer creating one clear artifact over spreading updates across several tools.
 - When a request crosses tools, name the handoff path and owner.
 - When a workflow repeats, suggest turning it into a skill or automation.

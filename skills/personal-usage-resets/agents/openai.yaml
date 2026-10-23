@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal Usage Resets"
+  short_description: "Learn your usage and time expiring Codex resets"
+  default_prompt: "Use $personal-usage-resets to check my usage and tell me whether to use or save a reset."

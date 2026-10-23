@@ -1,0 +1,4 @@
+interface:
+  display_name: "Arielle Long-Form Writing"
+  short_description: "Draft long-form work in Arielle's voice"
+  default_prompt: "Use $arielle-long-form-writing to draft or revise this essay in Arielle's voice."

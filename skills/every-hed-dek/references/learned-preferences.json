@@ -26,6 +26,17 @@
   ],
   "provisional": [
     {
+      "id": "how-to-hed-count-and-progression-dek",
+      "signal": "For practical how-to articles, test a direct outcome-and-method hed with a dek that adds the number of steps and the reader's concrete before-and-after progression. A longer, more specific dek can earn its space when the progression is a central payoff; treat this as a provisional pattern, not a fixed formula.",
+      "scope": "Practical AI how-to articles",
+      "basis": "inferred",
+      "evidence_decision_ids": [
+        "how-codex-taught-me-published-package"
+      ],
+      "counterevidence_decision_ids": [],
+      "last_updated": "2026-10-02"
+    },
+    {
       "id": "personal-transformation-hed-with-process-dek",
       "signal": "For first-person AI-learning essays, test a vivid two-sentence transformation hed with a short, conversational dek that names one concrete mechanism and the broad outcome; avoid procedural laundry lists when the article can supply the detail.",
       "scope": "First-person AI-learning essays",
