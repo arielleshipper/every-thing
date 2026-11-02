@@ -19,7 +19,7 @@ The `skills/` folder mirrors the custom skill set currently available to Codex, 
 - Arielle operating style, email voice, Slack triage, presentation comms, self-improvement, and Codex-level-up nudges.
 - Every ops context, procurement modeling, vendor dispute negotiation, SaaS renewal negotiation, commission-plan review, and weekly ops update workflows.
 - Ramp and finance workflows for approvals, bills, procurement, payments, receipts, reimbursements, spend analysis, transactions, vendor docs, agentic purchasing, and Ramp applications.
-- Personal long-form writing, LinkedIn posts, headline/dek selection, and Alison Roman voice guidance.
+- Personal long-form writing, LinkedIn posts, and headline/dek selection.
 - AI usage reporting, the AI usage dashboard, and personal usage/reset recommendations.
 - Browser automation, deck handling, flight search, and Loren's architecture-review workflow.
 
